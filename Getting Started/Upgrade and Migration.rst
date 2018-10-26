@@ -8,15 +8,15 @@ Upgrade
 
 From time to time it will be necessary to upgrade your osTicket installation to the latest version, either to fix bugs or gain new features. Starting with version 1.6, osTicket is a complete rewrite with new database schema and code base making it hard to simply upgrade from previous versions.
 
-#. Only previous versions from version 1.6 RC1 can be upgraded to the current version.
+#. Only installations of version 1.6 RC1 or later can be upgraded to the current version.
 #. If your osTicket version is older than 1.6, you need to look into migration instead.
 
-Our objectives is to make upgrading from an earlier release as painless as possible going forward and support migration from discontinued versions. we are working with `osTicket community <http://osticket.com/forums/>`_ on the best way to upgrade or/and import data from previous versions including 3rd party helpdesk systems.
+Our objective is to make upgrading from an earlier release as painless as possible going forward and support migration from discontinued versions. we are working with `osTicket community <http://osticket.com/forums/>`_ on the best way to upgrade or/and import data from previous versions including 3rd party helpdesk systems.
 
 Uploading Files
 ---------------
 
-After you have successfully downloaded the osTicket package to your computer you will need to prepare the files to be uploaded to your web server, where the old version of osTicket is running - overwriting the existing files. This can be accomplished by decompressing the download and then using an FTP client to transfer files in *upload directory/folder* to your server, overwriting existing osTicket files. For user using control panels like CPanel or Plesk, you can utilize the systems file manager to upload the package to your server then simply extract the package while making sure the path hierarchy is maintained.
+After you have successfully downloaded the osTicket package to your computer you will need to prepare the files to be uploaded to your web server, where the old version of osTicket is running - overwriting the existing files. This can be accomplished by decompressing the download and then using an FTP client to transfer files in *upload directory/folder* to your server, overwriting existing osTicket files. For user using control panels like CPanel or Plesk, you can utilize the system's file manager to upload the package to your server, then simply extract the package while making sure the path hierarchy is maintained.
 
 #. Make sure you backup your site's database and files **PLEASE DO NOT SKIP**
 #. Upgrader requires user with admin privileges
@@ -25,8 +25,8 @@ After you have successfully downloaded the osTicket package to your computer you
 #. Upload folder contains the osTicket files that need to be uploaded to your web server.
 #. Do not overwrite your ost-config.php file (in the include directory) or else you will lose your MySQL admin settings.
 #. Do not upload files in scripts folder. Only useful for remote piping
-#. For versions 1.6 RC1-RC2 Only
-#. Once you've overwritten the files, rename config.php to ostconfig.php (config.php is found in root osTicket directory).
+#. For versions 1.6 RC1-RC2 only:
+  - Once you've overwritten the files, rename config.php to ostconfig.php (config.php is found in root osTicket directory).
 
 **Note:** If you've customized your osTicket installation, you will need to port the changes to the new version following a successful upgrade. Database changes might cause conflicts.
 
